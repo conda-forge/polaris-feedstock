@@ -35,14 +35,14 @@ requirements:
     - tenacity
     - filelock
     - numpy
-    - pandas < 2.2.0
+    - pandas <2.2.0
     - scipy
     - scikit-learn
     - seaborn
     - datamol >=0.12.1
     - zarr
     - pyarrow
-    - fsspec[http]
+    - fsspec
 
 test:
   imports:
