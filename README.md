@@ -144,5 +144,4 @@ Feedstock Maintainers
 =====================
 
 * [@cwognum](https://github.com/cwognum/)
-* [@hadim](https://github.com/hadim/)
 
