@@ -1,5 +1,5 @@
 {% set name = "polaris" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/polaris-lib/polaris_lib-{{ version }}.tar.gz
-  sha256: 8e6c3cd8c29c2e5201404ce0842a341bd54782368f6b3ee668429b20a785afb0
+  sha256: 33c0df9a6a11d4c086312bbfadd1cb75a6a17bb6fdd1a393011c2873bb9fd12d
 
 build:
   entry_points:
     - polaris = polaris.cli:app
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
