@@ -145,6 +145,3 @@ Feedstock Maintainers
 
 * [@cwognum](https://github.com/cwognum/)
 
-
-<!-- dummy commit to enable rerendering -->
-
