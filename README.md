@@ -143,8 +143,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Andrewq11](https://github.com/Andrewq11/)
 * [@cwognum](https://github.com/cwognum/)
-
-
-<!-- dummy commit to enable rerendering -->
 
