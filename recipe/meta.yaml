@@ -1,5 +1,5 @@
 {% set name = "polaris" %}
-{% set version = "0.7.9" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
