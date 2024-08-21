@@ -34,8 +34,8 @@ requirements:
     - httpx
     - tenacity
     - filelock
-    - numpy
-    - pandas <2.2.0
+    - numpy < 2
+    - pandas
     - scipy
     - scikit-learn
     - seaborn
@@ -44,6 +44,7 @@ requirements:
     - pyarrow
     - fsspec
     - yaspin
+    - fastpdb
 
 test:
   imports:
