@@ -1,5 +1,5 @@
 {% set name = "polaris" %}
-{% set version = "0.7.9" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -34,8 +34,8 @@ requirements:
     - httpx
     - tenacity
     - filelock
-    - numpy
-    - pandas <2.2.0
+    - numpy <2
+    - pandas
     - scipy
     - scikit-learn
     - seaborn
@@ -44,6 +44,7 @@ requirements:
     - pyarrow
     - fsspec
     - yaspin
+    - fastpdb
 
 test:
   imports:
