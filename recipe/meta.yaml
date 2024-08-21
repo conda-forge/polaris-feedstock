@@ -34,7 +34,7 @@ requirements:
     - httpx
     - tenacity
     - filelock
-    - numpy < 2
+    - numpy <2
     - pandas
     - scipy
     - scikit-learn
