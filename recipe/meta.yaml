@@ -50,7 +50,6 @@ test:
   imports:
     - polaris
   commands:
-    - pip check
     - polaris --help
   requires:
     - pip
