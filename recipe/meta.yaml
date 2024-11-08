@@ -51,9 +51,7 @@ test:
     - polaris
   commands:
     - polaris --help
-  requires:
-    - pip
-
+    
 about:
   summary: Client for the Polaris Hub.
   license: Apache-2.0
