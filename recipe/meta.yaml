@@ -47,11 +47,10 @@ requirements:
     - fastpdb
 
 test:
-  imports:
-    - polaris
   commands:
     - polaris --help
-    
+    - python -c "import polaris; assert polaris.__version__ == '{{ version }}'"
+
 about:
   summary: Client for the Polaris Hub.
   license: Apache-2.0
