@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/polaris-lib/polaris_lib-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/polaris-lib/polaris_lib-{{ version }}.tar.gz
   sha256: 5b93e6becd17f40a32c0be1a512a806f1003e1c420e2d3c620ed1513a66963e8
 
 build:
@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - tqdm
     - loguru
     - typer
