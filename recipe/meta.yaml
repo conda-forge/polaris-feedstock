@@ -1,5 +1,5 @@
 {% set name = "polaris" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/polaris-lib/polaris_lib-{{ version }}.tar.gz
-  sha256: 74892ab5de6d8eda4d43109c962a6c28000eef992ba11ed2d63750bcb2dd44bc
+  sha256: ffdd254b9a13b75da8d6ff59995f27991f05cb9abc5a52fec5e2c4116a6e7f44
 
 build:
   entry_points:
