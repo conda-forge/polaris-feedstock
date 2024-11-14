@@ -1,5 +1,5 @@
 {% set name = "polaris" %}
-{% set version = "0.8.6" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/polaris-lib/polaris_lib-{{ version }}.tar.gz
-  sha256: 50c5c9d1d4984214c428643d06683fed88f59866f32c5ffb70f3990a6d22e567
+  sha256: 3e8c24ebf5e056b7ccac432c028b658d4fa64942106d149d404e9031b27ac831
 
 build:
   entry_points:
@@ -42,9 +42,11 @@ requirements:
     - datamol >=0.12.1
     - fastpdb
     - zarr
-    - pyarrow
+    - pyarrow <18
     - fsspec
     - yaspin
+    - typing-extensions >=4.12.0
+    - boto3 >=1.35.0
 
 test:
   commands:
