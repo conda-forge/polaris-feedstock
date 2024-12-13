@@ -49,6 +49,8 @@ requirements:
     - boto3 >=1.35.0
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - polaris --help
     - python -c "import polaris; assert polaris.__version__ == '{{ version }}'"
