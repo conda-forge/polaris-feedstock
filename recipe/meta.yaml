@@ -1,5 +1,5 @@
 {% set name = "polaris" %}
-{% set version = "0.9.3" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/polaris-lib/polaris_lib-{{ version }}.tar.gz
-  sha256: 92b0e34e5e872ee7646bd929f1ee7dd262c4765ada51f6f61ba39955f9fe7ad9
+  sha256: c1fc4fac6fc135beffb9ee62a821d28d27aa00be7b0e82264b31d2d281a560a3
 
 build:
   entry_points:
@@ -49,6 +49,8 @@ requirements:
     - boto3 >=1.35.0
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - polaris --help
     - python -c "import polaris; assert polaris.__version__ == '{{ version }}'"
