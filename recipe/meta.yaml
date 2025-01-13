@@ -41,12 +41,13 @@ requirements:
     - seaborn
     - datamol >=0.12.1
     - fastpdb
-    - zarr
+    - zarr >=2,<3
     - pyarrow <18
     - fsspec
     - yaspin
     - typing-extensions >=4.12.0
     - boto3 >=1.35.0
+    - pyroaring
 
 test:
   requires:
