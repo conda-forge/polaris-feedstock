@@ -14,7 +14,7 @@ build:
     - polaris = polaris.cli:app
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -46,7 +46,7 @@ requirements:
     - fsspec
     - yaspin
     - typing-extensions >=4.12.0
-    - boto3 >=1.35.0
+    - boto3 <1.36.0
     - pyroaring
 
 test:
