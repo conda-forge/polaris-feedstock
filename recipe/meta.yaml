@@ -32,9 +32,9 @@ requirements:
     - httpx
     - loguru
     - numcodecs >=0.13.1
-    - numpy < 2
+    - numpy <2
     - pandas
-    - pyarrow < 18
+    - pyarrow <18
     - pydantic >=2
     - pydantic-settings >=2
     - pyroaring
@@ -44,7 +44,7 @@ requirements:
     - seaborn
     - tqdm
     - typer
-    - typing-extensions>=4.12.0
+    - typing-extensions >=4.12.0
     - yaspin
     - zarr >=2,<3
 
