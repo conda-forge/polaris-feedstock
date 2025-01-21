@@ -1,5 +1,5 @@
 {% set name = "polaris" %}
-{% set version = "0.11.2" %}
+{% set version = "0.11.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/polaris-lib/polaris_lib-{{ version }}.tar.gz
-  sha256: 69af7d76b2d3d68371c006cf6a31cddc4466469a14e8ab6dbc535cfbdd607811
+  sha256: 8c8f41ca049cc2c08dc6ccf6e62338df7ec8741d64b7902531d1f74b687b0478
 
 build:
   entry_points:
     - polaris = polaris.cli:app
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -29,6 +29,7 @@ requirements:
     - datamol >=0.12.1
     - fastpdb
     - fsspec
+    - halo
     - httpx
     - loguru
     - numcodecs >=0.13.1
@@ -45,7 +46,6 @@ requirements:
     - tqdm
     - typer
     - typing-extensions >=4.12.0
-    - yaspin
     - zarr >=2,<3
 
 test:
