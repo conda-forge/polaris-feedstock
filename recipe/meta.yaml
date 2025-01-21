@@ -29,6 +29,7 @@ requirements:
     - datamol >=0.12.1
     - fastpdb
     - fsspec
+    - halo
     - httpx
     - loguru
     - numcodecs >=0.13.1
@@ -45,7 +46,6 @@ requirements:
     - tqdm
     - typer
     - typing-extensions >=4.12.0
-    - halo
     - zarr >=2,<3
 
 test:
