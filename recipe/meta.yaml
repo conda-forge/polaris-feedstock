@@ -1,5 +1,5 @@
 {% set name = "polaris" %}
-{% set version = "0.11.4" %}
+{% set version = "0.11.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/polaris-lib/polaris_lib-{{ version }}.tar.gz
-  sha256: 03dd9068c2be7a5c2413f09b05b5ee528bce46ac6d1a87a007e9672e6f5b9b38
+  sha256: b5e8b714057e775a2b6bbde050b9e66de02c959475db7e83874212c35d10c4d5
 
 build:
   entry_points:
@@ -29,9 +29,7 @@ requirements:
     - datamol >=0.12.1
     - fastpdb
     - fsspec
-    - halo
     - httpx
-    - loguru
     - numcodecs >=0.13.1
     - numpy <2
     - pandas
@@ -40,6 +38,7 @@ requirements:
     - pydantic-settings >=2
     - pyroaring
     - pyyaml
+    - rich >=13.9.4
     - scikit-learn
     - scipy
     - seaborn
