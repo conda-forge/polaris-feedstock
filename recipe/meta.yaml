@@ -31,7 +31,7 @@ requirements:
     - fsspec
     - httpx
     - numcodecs >=0.13.1
-    - numpy <2
+    - numpy <3
     - pandas
     - pyarrow <18
     - pydantic >=2
