@@ -16,7 +16,7 @@ build:
     - polaris = polaris.cli:app
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -26,6 +26,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<={{ python_max }}
+    - aiohttp
     - authlib
     - boto3 <1.36.0
     - datamol >=0.12.1
@@ -40,6 +41,7 @@ requirements:
     - pydantic-settings >=2
     - pyroaring
     - pyyaml
+    - requests
     - rich >=13.9.4
     - scikit-learn
     - scipy
